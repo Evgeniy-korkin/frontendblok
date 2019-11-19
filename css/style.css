@@ -336,6 +336,9 @@ body {
 .photo-btn {
     position: relative;
     margin-left: calc(100% - 120px);
+    /*
+    margin-top: calc(100% - 60px);
+    */
     top: 100%;
     margin-top: -60px;
     width: 120px;
