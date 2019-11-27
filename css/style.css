@@ -277,11 +277,22 @@ body {
     background-image: url(../img/grey.png);
     background-position: center center;
     margin: 0 auto 26px;
+    background-repeat: no-repeat;
 }
 
 .box-icon-pen {
     font-size: 30px;
     line-height: 4.8;
+}
+.box-item-min {
+    font-size: 24px;
+    width: 96px;
+    height: 96px;   
+    background-size: 96px 96px;
+    flex-basis: 96px;
+    text-align: center;
+    line-height: 3.8;
+    margin: initial;
 }
 
 .box-item:hover .box-icon {
@@ -336,9 +347,6 @@ body {
 .photo-btn {
     position: relative;
     margin-left: calc(100% - 120px);
-    /*
-    margin-top: calc(100% - 60px);
-    */
     top: 100%;
     margin-top: -60px;
     width: 120px;
@@ -359,4 +367,33 @@ body {
 }
 .photo-item:hover .photo-btn {
     display: flex;
+}
+.grid {
+    display: grid;
+    grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
+    grid-gap: 70px 50px;
+    margin-top: 122px;
+
+}
+.grid h3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 22px;
+    margin-top: 0;
+}
+.grid .description {
+    margin-bottom: 0;
+}
+.grid-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.grid-line:hover .box-icon {
+    background-image: url(../img/blue-min.png);
+    color: white;
+}
+.grid-line-text {
+    flex-basis: calc(100% - 126px);
 }
